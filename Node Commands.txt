@@ -1,0 +1,35 @@
+Initialize Node in any Project: 
+
+Steps:
+ -npm init
+ - Give Package Name
+ - Choose Version
+ - Write Description
+ - Entry Point 
+ - Can Skip any following Options
+ - GIve Author Name
+ - Continue by Pressing Y
+
+ Node Js authomatically wraps modules authomatically in a module wrapper function which is smiliar to 
+
+ function(exports, require, module, __filename, __dirname) {
+    
+}
+
+"We don't meed to do it explicitly and node does it authomatically.
+
+Importing Node Modules:
+
+const <Reference Var> = require("<Module Name>");
+
+Now you can use the functions and methods using th documentation of NodeJs ususally which is of the form 
+
+- <Reference Var>.<function Name>
+--Common JS Modules vs ECMA Script Modules
+
+Common JS Modules are imported using require Keyword [ Example: const moduleName = require("module ref")];
+
+ECMA script Modules are imported using import Keyword [ Example: import moduleName from "Module ref"];
+-To use ECMA script module in Node JS we use .mjs extension. (If error comes use "type":"module" in Package.json file)
+
+Settimeout is a non-blocking function.
